@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Drop-Off Locations</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Find a Book Drop-Off Location</h1>
+  <label for="postalCode">Enter Postal Code:</label>
+  <input type="text" id="postalCode" maxlength="6" placeholder="010000 - 999999">
+  <div id="bookType">
+    <label for="bookType">What kind of books are you looking for?</label>
+    <select id="bookTypeSelect">
+      <option value="story">Story Books</option>
+      <option value="text">Textbooks</option>
+      <option value="both">Both</option>
+    </select>
+  </div>
+  <button onclick="searchLocations()">Search</button>
+  <div id="results"></div>
+  <script src="script.js"></script>
+</body>
