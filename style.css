@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url("/workspaces/TUpBooksgowhere/stack of books.png");
+    background-size: cover; /* This ensures the image covers the whole background */
   }
   
   h1 {
