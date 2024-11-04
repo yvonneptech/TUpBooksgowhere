@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Book Drop-Off Locations</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Club Book Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Find a Book Drop-Off Location</h1>
-  <label for="postalCode">Enter Postal Code:</label>
-  <input type="text" id="postalCode" maxlength="6" placeholder="010000 - 999999">
-  <div id="bookType">
-    <label for="bookType">What kind of books are you looking for?</label>
-    <select id="bookTypeSelect">
-      <option value="story">Story Books</option>
-      <option value="text">Textbooks</option>
-      <option value="both">Both</option>
-    </select>
-  </div>
-  <button onclick="searchLocations()">Search</button>
-  <div id="results"></div>
-  <script src="script.js"></script>
+    <div class="error-modal" id="errorModal"></div>
+    <div class="container">
+        <h1>Community Club Book Search</h1>
+        <form class="search-form" id="searchForm">
+            <div class="input-group">
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" placeholder="Enter postal code (010000-999999)" maxlength="6">
+                <div class="error" id="postalError">Please enter a valid postal code between 010000 to 999999</div>
+            </div>
+            
+            <div class="input-group">
+                <label>Book Type:</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="storybooks" name="bookType" value="storybooks">
+                        Story Books
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="textbooks" name="bookType" value="textbooks">
+                        Textbooks
+                    </label>
+                </div>
+                <div class="error" id="bookTypeError">Please select at least one book type</div>
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="results">
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Unit</th>
+                        <th>Postal Code</th>
+                        <th>Available Books</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+</html>
