@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fff8e7;
+  background-color: #fff9e6;  /* Using the soft cream color we discussed */
   padding: 20px;
   min-height: 100vh;
   display: flex;
@@ -71,6 +71,15 @@ input[type="text"]:focus {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+}
+
+input[type="checkbox"]:disabled + span {
+  color: #666;
+}
+
+input[type="checkbox"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 button {

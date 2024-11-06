@@ -2,7 +2,7 @@
 const communityClubsData = {
     '01': [
         ['imPAct@Hong Lim Green', '20, Upper Pickering Street', '', '058284', {storybooks: true, textbooks: true}],
-        ['Kreta Ayer CC', '28A, KRETA AYER ROAD', '', '088995', {storybooks: true, textbooks: true}],
+        ['Kreta Ayer CC', '28A, KRETA AYER ROAD', '', '088995', {storybooks: true, textbooks: false}],
         ['Tanjong Pagar CC', '101, CANTONMENT ROAD', '', '089774', {storybooks: true, textbooks: true}],
         ['Radin Mas CC', '51, TELOK BLANGAH CRESCENT', 'RADIN MAS COMMUNITY CLUB', '098917', {storybooks: true, textbooks: true}]
     ],
@@ -66,7 +66,7 @@ const communityClubsData = {
         ['Buangkok CC', '70 Compassvale Bow', '#01-25', '544692', {storybooks: true, textbooks: true}],
         ['Bukit Timah CC', '20, TOH YI DRIVE', '', '596569', {storybooks: true, textbooks: true}],
         ['Changi Simei CC', '10, SIMEI STREET 2', '', '529915', {storybooks: false, textbooks: true}],
-        ['Ci Yuan CC', '51, Hougang Avenue 9', '#01-01', '538776', {storybooks: true, textbooks: true}],
+        ['Ci Yuan CC', '51, Hougang Avenue 9', '#01-01', '538776', {storybooks: true, textbooks: false}],
         ['Hougang CC', '35, HOUGANG AVENUE 3', '', '538840', {storybooks: true, textbooks: true}],
         ['Hwi Yoh CC', '535, SERANGOON NORTH AVE 4', '#01-179', '550535', {storybooks: true, textbooks: true}],
         ['Our Tampines Hub', '1, TAMPINES WALK', '#04-01', '528523', {storybooks: false, textbooks: true}],
@@ -76,7 +76,7 @@ const communityClubsData = {
         ['PAssion WaVe @ Pasir Ris', '125, ELIAS ROAD', '', '519926', {storybooks: true, textbooks: true}],
         ['Paya Lebar Kovan CC', '207, HOUGANG ST 21', '', '530207', {storybooks: true, textbooks: true}],
         ['Punggol CC', '3, HOUGANG AVE 6', '', '538808', {storybooks: false, textbooks: true}],
-        ['Rivervale CC', '2, RIVERVALE CLOSE', '#01-01', '544583', {storybooks: true, textbooks: false}],
+        ['Rivervale CC', '2, RIVERVALE CLOSE', '#01-01', '544583', {storybooks: false, textbooks: false}],
         ['Sengkang CC', '2, SENGKANG SQUARE', '#01-01', '545025', {storybooks: true, textbooks: true}],
         ['Tampines West CC', '5, TAMPINES AVENUE 3', '', '529705', {storybooks: true, textbooks: true}],
         ['The Serangoon CC', '10, SERANGOON NORTH AVE 2', '', '555877', {storybooks: false, textbooks: true}],
@@ -93,13 +93,13 @@ const communityClubsData = {
         ['Hong Kah North CC', '30, BUKIT BATOK STREET 31', '#01-07', '659440', {storybooks: true, textbooks: true}],
         ['Jurong Green CC', '6, JURONG WEST AVE 1', '', '649520', {storybooks: true, textbooks: true}],
         ['Jurong Spring CC', '8, JURONG WEST STREET 52', '', '649296', {storybooks: true, textbooks: true}],
-        ['Keat Hong CC', '2, CHOA CHU KANG LOOP', '#01-01', '689687', {storybooks: true, textbooks: true}],
+        ['Keat Hong CC', '2, CHOA CHU KANG LOOP', '#01-01', '689687', {storybooks: false, textbooks: true}],
         ['Limbang CC', '20, CHOA CHU KANG ST 52', '#05-10', '689286', {storybooks: true, textbooks: true}],
         ['Nanyang CC', '60, JURONG WEST ST 91', '', '649040', {storybooks: true, textbooks: true}],
         ['PAssion WaVe @ Jurong Lake Gardens', '100, Yuan Ching Road', '', '618662', {storybooks: true, textbooks: true}],
         ['Senja-Cashew CC', '101, BUKIT PANJANG ROAD', '#01-1', '679910', {storybooks: false, textbooks: true}],
         ['The Frontier CC', '60, JURONG WEST CENTRAL 3', '#01-01', '648346', {storybooks: true, textbooks: true}],
-        ['Yew Tee CC', '20, CHOA CHU KANG ST 52', '#01-01', '689286', {storybooks: true, textbooks: true}],
+        ['Yew Tee CC', '20, CHOA CHU KANG ST 52', '#01-01', '689286', {storybooks: true, textbooks: false}],
         ['Yuhua CC', '90, BOON LAY WAY', '', '609958', {storybooks: true, textbooks: true}],
         ['Zhenghua CC', '640A, SENJA CLOSE', '#01-301', '671640', {storybooks: true, textbooks: false}]
     ],
@@ -110,17 +110,17 @@ const communityClubsData = {
         ['Chong Pang CC', '126, Yishun Street 11', '#01-427', '760126', {storybooks: true, textbooks: true}],
         ['Fernvale CC', '21, SENGKANG WEST AVENUE', '#01-01', '797650', {storybooks: true, textbooks: true}],
         ['Nee Soon Central CC', '1, NORTHPOINT DRIVE', '#01-201', '768019', {storybooks: true, textbooks: true}],
-        ['Nee Soon East CC', '1, YISHUN AVE 9', '', '768893', {storybooks: true, textbooks: true}],
+        ['Nee Soon East CC', '1, YISHUN AVE 9', '', '768893', {storybooks: true, textbooks: false}],
         ['Nee Soon Link CC', '413, Yishun Ring Road', '#01-1887', '760413', {storybooks: true, textbooks: true}],
         ['Nee Soon South CC', '30, Yishun Street 81', '', '768455', {storybooks: true, textbooks: true}],
         ['PAssion WaVe @ Sembawang', '60, JALAN MEMPURONG', '', '759058', {storybooks: false, textbooks: true}],
         ['Woodgrove-Fuchun CC', '353, WOODLANDS AVENUE 1', '#01-753', '730353', {storybooks: true, textbooks: true}],
-        ['Woodlands CC', '832, WOODLANDS STREET 83', '#01-65', '730832', {storybooks: true, textbooks: true}],
+        ['Woodlands CC', '832, WOODLANDS STREET 83', '#01-65', '730832', {storybooks: false, textbooks: true}],
         ['Woodlands Galaxy CC', '31, WOODLANDS AVENUE 6', '#1-1', '738991', {storybooks: true, textbooks: true}]
     ],
     '80-89': [
         ['One Punggol CC', '1 Punggol Drive', '#01-01', '828629', {storybooks: true, textbooks: true}],
-        ['Punggol 21 CC', '80 PUNGGOL FIELD', '#01-01', '828815', {storybooks: true, textbooks: true}],
+        ['Punggol 21 CC', '80 PUNGGOL FIELD', '#01-01', '828815', {storybooks: true, textbooks: false}],
         ['Punggol West CC', '259C, PUNGGOL FIELD', '#01-47', '823259', {storybooks: true, textbooks: true}]
     ]
 };
@@ -139,7 +139,7 @@ function showError(message) {
 // Function to determine postal code range
 function getPostalRange(postalCode) {
     const prefix = postalCode.substring(0, 2);
-    if (prefix === '01') return '01';
+    if (prefix.startsWith('0')) return '01';
     if (prefix >= '10' && prefix <= '19') return '10-19';
     if (prefix >= '20' && prefix <= '29') return '20-29';
     if (prefix >= '30' && prefix <= '39') return '30-39';
@@ -174,6 +174,46 @@ function getBookTypesString(bookTypes) {
     if (bookTypes.textbooks) types.push('Textbooks');
     return types.length > 0 ? types.join(', ') : 'None available';
 }
+
+// Handle the 'Both' checkbox
+document.getElementById('both').addEventListener('change', function(e) {
+    const storybooks = document.getElementById('storybooks');
+    const textbooks = document.getElementById('textbooks');
+    
+    if (this.checked) {
+        // If 'Both' is checked, check the other boxes
+        storybooks.checked = true;
+        textbooks.checked = true;
+        // Disable the individual checkboxes
+        storybooks.disabled = true;
+        textbooks.disabled = true;
+    } else {
+        // If 'Both' is unchecked, enable the individual checkboxes
+        storybooks.disabled = false;
+        textbooks.disabled = false;
+        // Uncheck them
+        storybooks.checked = false;
+        textbooks.checked = false;
+    }
+});
+
+// Update 'Both' checkbox when individual checkboxes are clicked
+document.getElementById('storybooks').addEventListener('change', updateBothCheckbox);
+document.getElementById('textbooks').addEventListener('change', updateBothCheckbox);
+
+function updateBothCheckbox() {
+    const storybooks = document.getElementById('storybooks');
+    const textbooks = document.getElementById('textbooks');
+    const bothCheckbox = document.getElementById('both');
+    
+    // If both individual checkboxes are checked, check the 'Both' checkbox
+    if (storybooks.checked && textbooks.checked) {
+        bothCheckbox.checked = true;
+        storybooks.disabled = true;
+        textbooks.disabled = true;
+    }
+}
+
 
 // Form submission event handler
 document.getElementById('searchForm').addEventListener('submit', function(e) {
