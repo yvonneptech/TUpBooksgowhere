@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Club Book Search</title>
+    <title>Community Club Books Go Where</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="error-modal" id="errorModal"></div>
     <div class="container">
-        <h1>Community Club Book Search</h1>
-        <form class="search-form" id="searchForm">
-            <div class="input-group">
-                <label for="postalCode">Postal Code:</label>
-                <input type="text" id="postalCode" placeholder="Enter postal code (010000-999999)" maxlength="6">
-                <div class="error" id="postalError">Please enter a valid postal code between 010000 to 999999</div>
-            </div>
-            
-            <div class="input-group">
-                <label>Book Type:</label>
-                <div class="checkbox-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="both" name="bookType" value="both">
-                        Both
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="storybooks" name="bookType" value="storybooks">
-                        Story Books
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="textbooks" name="bookType" value="textbooks">
-                        Textbooks
-                    </label>
-                </div>
-                <div class="error" id="bookTypeError">Please select at least one book type</div>
-            </div>
-            
-            <button type="submit">Search</button>
-        </form>
+        <nav class="navigation">
+            <button class="nav-btn active" data-page="search">Search</button>
+            <button class="nav-btn" data-page="about">About</button>
+        </nav>
 
-        <div class="results">
-            <table id="resultsTable">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Unit</th>
-                        <th>Postal Code</th>
-                        <th>Available Books</th>
-                    </tr>
-                </thead>
-                <tbody id="resultsBody">
-                </tbody>
-            </table>
+        <div id="search-page" class="page active">
+            <h1>Community Clubs Go Where</h1>
+            <form class="search-form" id="searchForm">
+                <!-- Your existing search form content -->
+                <div class="input-group">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" placeholder="Enter postal code (010000-999999)" maxlength="6">
+                    <div class="error" id="postalError">Please enter a valid postal code between 010000 to 999999</div>
+                </div>
+                
+                <div class="input-group">
+                    <label>Book Type:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="both" name="bookType" value="both">
+                            Both
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="storybooks" name="bookType" value="storybooks">
+                            Story Books
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="textbooks" name="bookType" value="textbooks">
+                            Textbooks
+                        </label>
+                    </div>
+                    <div class="error" id="bookTypeError">Please select at least one book type</div>
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="results">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Unit</th>
+                            <th>Postal Code</th>
+                            <th>Available Books</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="about-page" class="page">
+            <h1>About This Project</h1>
+            <div class="about-content">
+                <p>I took on the Tech Up 3.0 challenge, and I have to admit, it feels pretty meaningful to have actually come out on the other side with something I'm proud of.</p>
+                
+                <p>To be honest, I never thought I'd be able to do this again. The last time I touched coding was 20 years ago, when I was definitely not acing the subject. So when I first heard about this program, I'll admit—my first thought was, "Is my boss trying to get rid of me?" Haha, well, he didn't know about my 20-year-old struggles with programming, but those old fears and doubts still lingered.</p>
+                
+                <p>That said, after going through this journey (with a lot of help from Google and some trusty AI tools), I've realised that the angst around programming isn't as overwhelming as it used to be. There are so many tools available now that can correct your code on the fly, so you don't have to worry about asking for help and fearing that someone will judge your skills (not that anyone here would!).</p>
+                
+                <p>So, if I can do it, I'm convinced anyone can. Whether you've never been trained in IT or, like me, you've failed programming in the past—this is proof that it's never too late to dive in and give it a shot.</p>
+            
+                <p>Would love to hear from you about your experiences too! <a href="mailto:yvonnetyr@yahoo.com.au" class="email-link">Email Me</a></p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

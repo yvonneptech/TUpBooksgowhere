@@ -301,3 +301,18 @@ document.getElementById('postalCode').addEventListener('input', function(e) {
         e.target.value = value.slice(0, 6);
     }
 });
+// Navigation functionality
+document.querySelectorAll('.nav-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove active class from all buttons and pages
+        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Show corresponding page
+        const pageId = this.getAttribute('data-page');
+        document.getElementById(pageId + '-page').classList.add('active');
+    });
+});
