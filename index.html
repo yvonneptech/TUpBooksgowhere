@@ -90,19 +90,51 @@
         </div>
     </div>
     
-    <div id="legal-page" class="page">
-        <h1>Legal Note</h1>
-        <div class="legal-content">
-            <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        #legal-page {
+            display: none;
+        }
+
+        #legal-page.active {
+            display: block;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ... your existing content ... -->
+        
+        <!-- Move legal-page inside container -->
+        <div id="legal-page" class="page">
+            <h1>Legal Note</h1>
+            <div class="legal-content">
+                <p>Disclaimer: This website is created for learning purposes only...</p>
+            </div>
         </div>
+
+        <!-- Footer at bottom of container -->
+        <footer class="footer">
+            <button class="nav-btn" data-page="legal">Legal Note</button>
+        </footer>
     </div>
-
-    <!-- Add this right before closing container div -->
-    <nav class="footer">
-        <button class="nav-btn" data-page="legal">Legal Note</button>
-    </nav>
-</div>
-
 
     <script src="script.js"></script>
    

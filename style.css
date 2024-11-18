@@ -233,24 +233,48 @@ tr:hover {
   color: #0056b3;
   text-decoration: underline;
 }
-/* Add to your existing CSS */
+
+/* Footer positioning and style */
 .footer {
-  margin-top: 40px;
-  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
   border-top: 1px solid #ddd;
-  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
-.footer .nav-btn {
-  color: #666;
-  font-size: 14px;
-}
-
-.footer .nav-btn:hover {
-  color: #007bff;
+/* Legal page styles */
+#legal-page {
+  padding: 20px;
+  margin-bottom: 60px; /* Space for fixed footer */
 }
 
 .legal-content {
-  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.legal-content p {
+  line-height: 1.8;
   color: #555;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer {
+      padding: 10px;
+  }
+  
+  .legal-content {
+      padding: 15px;
+  }
 }
