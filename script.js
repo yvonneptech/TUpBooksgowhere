@@ -316,30 +316,3 @@ document.querySelectorAll('.nav-btn').forEach(button => {
         document.getElementById(pageId + '-page').classList.add('active');
     });
 });
-// Existing navigation code
-document.querySelectorAll('.nav-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        // Remove active class from all buttons and pages
-        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-        
-        // Add active class to clicked button
-        this.classList.add('active');
-        
-        // Show corresponding page
-        const pageId = this.getAttribute('data-page');
-        const targetPage = document.getElementById(pageId + '-page');
-        
-        if (targetPage) {
-            targetPage.classList.add('active');
-            
-            // If legal page is shown, adjust container padding
-            if (pageId === 'legal') {
-                document.querySelector('.container').style.paddingBottom = '80px';
-            } else {
-                document.querySelector('.container').style.paddingBottom = '30px';
-            }
-        }
-    });
-});
-
