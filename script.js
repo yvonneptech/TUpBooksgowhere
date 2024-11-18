@@ -316,3 +316,9 @@ document.querySelectorAll('.nav-btn').forEach(button => {
         document.getElementById(pageId + '-page').classList.add('active');
     });
 });
+
+document.getElementById('legalLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    const disclaimer = document.getElementById('disclaimer');
+    disclaimer.classList.toggle('show');
+});

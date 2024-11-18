@@ -233,3 +233,24 @@ tr:hover {
   color: #0056b3;
   text-decoration: underline;
 }
+/* Add to your existing CSS */
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.footer .nav-btn {
+  color: #666;
+  font-size: 14px;
+}
+
+.footer .nav-btn:hover {
+  color: #007bff;
+}
+
+.legal-content {
+  line-height: 1.6;
+  color: #555;
+}
